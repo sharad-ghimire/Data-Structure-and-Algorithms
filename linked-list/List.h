@@ -8,12 +8,13 @@ private:
         node* next;
     }* nodePointer ;
 
-    nodePointer head;
-    nodePointer curr;
+    nodePointer header;
+    nodePointer current;
     nodePointer temp;
 
 
 public:
+    List();
     virtual ~List ();
     virtual bool isEmpty() = 0;
     virtual void prepend(int c) = 0;
