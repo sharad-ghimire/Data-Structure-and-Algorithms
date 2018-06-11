@@ -21,10 +21,8 @@ public:
     virtual void append(int c) = 0;
     virtual int head() = 0;
     virtual List tail() = 0;
-
-    // void AddNode(int addData);
-    void DeleteNode(int delData);
-    // void PrintList();
+    virtual void DeleteNode(int delData);
+    virtual void PrintList();
 };
 
 #endif   /*LIST_H*/
