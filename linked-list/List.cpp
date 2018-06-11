@@ -41,6 +41,8 @@ void List::DeleteNode(int delData){
     }
     if(current==NULL) {
         cout<<delData<<" not in list\n";
+        delete delPtr;
+        
     }else{
         delPtr = current;
         current = current->next;
