@@ -15,14 +15,14 @@ private:
 
 public:
     List();
-    virtual ~List ();
-    virtual bool isEmpty() = 0;
-    virtual void prepend(int c) = 0;
-    virtual void append(int c) = 0;
-    virtual int head() = 0;
-    virtual List tail() = 0;
-    virtual void DeleteNode(int delData);
-    virtual void PrintList();
+     ~List ();
+     bool isEmpty();
+     void prepend(int c);
+     void append(int c);
+     int head();
+     List tail();
+     void DeleteNode(int delData);
+     void PrintList();
 };
 
 #endif   /*LIST_H*/
