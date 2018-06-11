@@ -30,3 +30,24 @@ void List::append(int c) {
 
 }
 
+
+void List::DeleteNode(int delData){
+    nodePointer delPtr = NULL;
+    temp = header;
+    current = header;
+    while(current != NULL && current->data != delData){
+        temp = current;
+        current = current->next;
+    }
+    if(current==NULL) {
+        cout<<delData<<" not in list\n";
+    }else{
+        delPtr = current;
+        current = current->next;
+        temp->next = current;
+        delete delPtr;
+        cout <<"The value "<< delData << "was deleted\n";
+
+    }
+}
+

@@ -23,7 +23,7 @@ public:
     virtual List tail() = 0;
 
     // void AddNode(int addData);
-    // void DeleteNode(int delData);
+    void DeleteNode(int delData);
     // void PrintList();
 };
 
