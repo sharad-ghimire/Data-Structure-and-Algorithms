@@ -67,6 +67,28 @@ public class LinkedList {
 			t = t.next;
 		}
 		return index;
+    }
+    public static Node find(int index)
+	{
+		Node temp=head;
+		for(int i=0; i<index; i++)
+		{
+			temp = temp.next;
+		}
+		return temp;
+	}
+		
+	public static void printList() {
+		Node temp = head;
+		while(temp != null)
+		{
+			System.out.println(temp.data);
+			temp = temp.next;
+		}
+	}
+	
+	public static int getSize() {
+		return numNodes;
 	}
 
 
