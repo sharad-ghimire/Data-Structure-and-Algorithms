@@ -46,7 +46,29 @@ public class LinkedList {
 		temp.next = new Node(dat);
 		temp.next.next = holder;
 		numNodes++;
+    }
+    
+    public void deleteAtIndex(int index) {
+		Node temp = head;
+		for(int i=0; i< index - 1 && temp.next != null; i++)
+		{
+			temp = temp.next;
+		}
+		temp.next = temp.next.next;
+		numNodes--;
+    }
+    
+    public static int find(Node n) {
+		Node t = head;
+		int index = 0;
+		while(t != n)
+		{
+			index++;
+			t = t.next;
+		}
+		return index;
 	}
+
 
 
 
