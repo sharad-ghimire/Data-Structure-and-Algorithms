@@ -37,7 +37,7 @@ int main (int argc, char ** argv) {   //char * argv[]
 	* What if we want to know the length?
 * \0 &rightarrow; ASCII character for null <br>
 * `char name[6] = "Hello";` 
-![alt text](images\1array.png "Null terminated char array")
+![alt text](images/0array.png "Null terminated char array")
 
 ### Arrays
 `int number[5];` 

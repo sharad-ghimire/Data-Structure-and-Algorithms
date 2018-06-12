@@ -15,14 +15,14 @@ private:
 
 public:
     List();
-     ~List ();
-     bool isEmpty();
-     void prepend(int c);
-     void append(int c);
-     int head();
-     List tail();
-     void DeleteNode(int delData);
-     void PrintList();
+    ~List ();
+    bool isEmpty();
+    void prepend(int c);
+    void append(int c);
+    int head();
+    List tail();
+    void DeleteNode(int delData);
+    void PrintList();
 };
 
 #endif   /*LIST_H*/
