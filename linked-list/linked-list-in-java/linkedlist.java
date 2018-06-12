@@ -22,6 +22,30 @@ public class LinkedList {
 		head = new Node(dat);
 		head.next = temp;
 		numNodes++;
+    }
+
+    public void addAtTail(Object dat){
+		Node temp = head;
+		while(temp.next != null)
+		{
+			temp = temp.next;
+		}
+		
+		temp.next = new Node(dat);
+		numNodes++;
+    }
+
+    public void addAtIndex(int index, Object dat) {
+		Node temp = head;
+		Node holder;
+		for(int i=0; i < index-1 && temp.next != null; i++)
+		{
+			temp = temp.next;
+		}
+		holder = temp.next;
+		temp.next = new Node(dat);
+		temp.next.next = holder;
+		numNodes++;
 	}
 
 
