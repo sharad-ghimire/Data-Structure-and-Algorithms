@@ -30,7 +30,35 @@ class LinkedList{
         this.size++;
     }
 
+
+
     insertAt(element, location) {
+        if(location>0 && location >this.size){
+            return false;
+        }
+        else {
+            // creates a new node
+        var node = new Node(element);
+        var curr, prev;
+ 
+        curr = this.head;
+        if (location == 0) {
+            node.next = head;
+            this.head = node;
+        } else {
+            curr = this.head;
+            var it = 0;
+             while (it < location) {
+                it++;
+                prev = curr;
+                curr = curr.next;
+            }
+             node.next = curr;
+            prev.next = node;
+        }
+        this.size++;
+
+        }
 
     }
 
