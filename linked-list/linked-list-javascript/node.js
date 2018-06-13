@@ -63,6 +63,29 @@ class LinkedList{
     }
 
     removeFrom(location) {
+        if (location > 0 && location > this.size)
+        return -1;
+    else {
+        var curr, prev, it = 0;
+        curr = this.head;
+        prev = curr;
+
+        if (index === 0) {
+            this.head = curr.next;
+        } else {
+
+            while (it < index) {
+                it++;
+                prev = curr;
+                curr = curr.next;
+            }
+t
+            prev.next = curr.next;
+        }
+        this.size--;
+
+        return curr.element;
+    }
 
     }
     removeElement(element) {
